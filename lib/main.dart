@@ -1,3 +1,4 @@
+// import 'package:ecommerceapp/view/home/home_page.dart';
 import 'package:ecommerceapp/view/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 

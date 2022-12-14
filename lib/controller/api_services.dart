@@ -12,7 +12,7 @@ try {
   
  var url = Uri.parse(ApiConstants.baseUrl);
     var response = await http.get(url);
-
+print(response.body);
 
     if(response.statusCode==200){
       
