@@ -1,6 +1,8 @@
+// ignore_for_file: body_might_complete_normally_nullable
+
 import 'dart:developer';
 
-import 'package:ecommerceapp/controller/api_constants.dart';
+import 'package:ecommerceapp/controller/constants/api_constants.dart';
 import 'package:ecommerceapp/model/shop_model.dart';
 import 'package:http/http.dart' as http;
 
@@ -12,7 +14,7 @@ try {
   
  var url = Uri.parse(ApiConstants.baseUrl);
     var response = await http.get(url);
-print(response.body);
+
 
     if(response.statusCode==200){
       

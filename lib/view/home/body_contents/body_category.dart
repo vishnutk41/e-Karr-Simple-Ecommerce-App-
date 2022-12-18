@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
 
 
-class Category extends StatefulWidget {
-  const Category({super.key});
+// ignore: must_be_immutable
+class Category extends StatelessWidget {
+  Category({super.key});
 
-  @override
-  State<Category> createState() => _CategoryState();
-}
-
-class _CategoryState extends State<Category> {
     List <String> categories =["Hand Bag","Jewelry","Foot Wear","Dresses"];
+
 int selectionIndex=0;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
-  padding: const EdgeInsets.symmetric(vertical: 20),
+      padding: const EdgeInsets.symmetric(vertical: 20),
   child:   SizedBox(
   
     height: 25,
@@ -36,6 +34,7 @@ int selectionIndex=0;
       ),
 );
   }
+
   Widget buildCategory(int index) {
      return GestureDetector(
       onTap: (){

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:ecommerceapp/view/home/body_contents/body_category.dart';
 import 'package:ecommerceapp/view/home/body_contents/items_grid.dart';
 import 'package:flutter/material.dart';
@@ -11,8 +13,8 @@ class Body extends StatelessWidget {
     return Column(
         crossAxisAlignment: CrossAxisAlignment.start,
 
-children: const [
-  Padding(
+children: [
+        const Padding(
     padding: EdgeInsets.symmetric(horizontal: 20.0),
     child: Text("Women",style: TextStyle(
       fontWeight: FontWeight.bold,
